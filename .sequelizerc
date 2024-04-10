@@ -1,0 +1,7 @@
+const {resolve} = require("path");
+module.exports = {
+  config: resolve(__dirname, "src", "config", "database.js"),
+  "models-path": resolve(__dirname, "src", "models"),
+  "migrations-path": resolve(__dirname, "src", "database", "migrations"),//alterando(salvar no arquivo, o tempo que ele foi alterado(tipo um historico)) no base de dados(exe: alterar tabela), alem caminho dos tabelas
+  "seeders-path": resolve(__dirname, "src", "database", "seeds")
+}
